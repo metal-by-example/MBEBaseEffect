@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="c22-O7-iKe" customClass="ShadingInspectorView" customModule="MBEEffectDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="125"/>
+            <subviews>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-d9-laq">
+                    <rect key="frame" x="6" y="106" width="13" height="13"/>
+                    <buttonCell key="cell" type="disclosureTriangle" bezelStyle="disclosure" imagePosition="only" alignment="left" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="X3H-VR-qc3">
+                        <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="disclosureButtonValueDidChange:" target="c22-O7-iKe" id="qPr-D3-qEw"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Jwf-I6-1ax">
+                    <rect key="frame" x="0.0" y="0.0" width="248" height="105"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="amc-Yw-w3B">
+                            <rect key="frame" x="18" y="81" width="79" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="y8r-Wt-xS3"/>
+                            </constraints>
+                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Lighting Mode" id="feq-em-AmT">
+                                <font key="font" metaFont="system" size="10"/>
+                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W61-Nj-owZ">
+                            <rect key="frame" x="100" y="79" width="129" height="16"/>
+                            <popUpButtonCell key="cell" type="push" title="Per-vertex" bezelStyle="rounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="TRr-ZD-ynR" id="Abv-NX-FJh">
+                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="miniSystem"/>
+                                <menu key="menu" id="Rz6-gA-RO9">
+                                    <items>
+                                        <menuItem title="Per-vertex" state="on" id="TRr-ZD-ynR"/>
+                                        <menuItem title="Per-fragment" id="9O7-vf-7Ld"/>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                            <connections>
+                                <action selector="lightingModeValueDidChange:" target="c22-O7-iKe" id="eVh-az-GGY"/>
+                            </connections>
+                        </popUpButton>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WTZ-ow-2qS">
+                            <rect key="frame" x="102" y="62" width="124" height="11"/>
+                            <buttonCell key="cell" type="check" title="Two-Sided Lighting" bezelStyle="regularSquare" imagePosition="left" controlSize="mini" state="on" inset="2" id="AhW-TQ-g06">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="miniSystem"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="twoSidedLightingValueDidChange:" target="c22-O7-iKe" id="bIm-g7-gw5"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cAL-zk-0nN">
+                            <rect key="frame" x="18" y="38" width="79" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="Hzy-IO-DWN"/>
+                            </constraints>
+                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Ambient Light" id="N96-yY-XWc">
+                                <font key="font" metaFont="system" size="10"/>
+                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NC6-8A-cgX">
+                            <rect key="frame" x="18" y="12" width="79" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="ear-4D-DtV"/>
+                            </constraints>
+                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Constant Color" id="LF7-u9-HCi">
+                                <font key="font" metaFont="system" size="10"/>
+                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="DHK-Ez-865">
+                            <rect key="frame" x="102" y="36" width="126" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Iu6-IM-iDP"/>
+                            </constraints>
+                            <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="ambientColorWellValueDidChange:" target="c22-O7-iKe" id="57y-MM-eP9"/>
+                            </connections>
+                        </colorWell>
+                        <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="lne-kP-bLL">
+                            <rect key="frame" x="102" y="10" width="57" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="dgu-3q-LRp"/>
+                            </constraints>
+                            <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="constantColorWellValueDidChange:" target="c22-O7-iKe" id="8kv-cp-GcR"/>
+                            </connections>
+                        </colorWell>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QYU-Rr-NoO">
+                            <rect key="frame" x="174" y="13" width="54" height="11"/>
+                            <buttonCell key="cell" type="check" title="Enabled" bezelStyle="regularSquare" imagePosition="left" controlSize="mini" state="on" inset="2" id="s07-ZF-OrM">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="miniSystem"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="useConstantColorValueDidChange:" target="c22-O7-iKe" id="CgH-wK-xlK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WTZ-ow-2qS" secondAttribute="trailing" constant="22" id="3OQ-uS-z9F"/>
+                        <constraint firstItem="WTZ-ow-2qS" firstAttribute="top" secondItem="W61-Nj-owZ" secondAttribute="bottom" constant="8" id="5Yx-mc-ogu"/>
+                        <constraint firstItem="amc-Yw-w3B" firstAttribute="top" secondItem="Jwf-I6-1ax" secondAttribute="top" constant="11" id="8Gz-T6-Th5"/>
+                        <constraint firstItem="amc-Yw-w3B" firstAttribute="firstBaseline" secondItem="W61-Nj-owZ" secondAttribute="firstBaseline" id="AMC-2D-d1O"/>
+                        <constraint firstItem="cAL-zk-0nN" firstAttribute="leading" secondItem="Jwf-I6-1ax" secondAttribute="leading" constant="20" symbolic="YES" id="Lma-yR-1cr"/>
+                        <constraint firstItem="W61-Nj-owZ" firstAttribute="leading" secondItem="amc-Yw-w3B" secondAttribute="trailing" constant="7" id="Mcu-eK-wT1"/>
+                        <constraint firstItem="WTZ-ow-2qS" firstAttribute="width" secondItem="W61-Nj-owZ" secondAttribute="width" id="OTg-WX-Msr"/>
+                        <constraint firstItem="DHK-Ez-865" firstAttribute="leading" secondItem="cAL-zk-0nN" secondAttribute="trailing" constant="7" id="Rb0-Ci-z0Z"/>
+                        <constraint firstAttribute="trailing" secondItem="DHK-Ez-865" secondAttribute="trailing" constant="20" symbolic="YES" id="WBg-lm-YRy"/>
+                        <constraint firstAttribute="trailing" secondItem="W61-Nj-owZ" secondAttribute="trailing" constant="22" id="Z70-ac-A7a"/>
+                        <constraint firstItem="amc-Yw-w3B" firstAttribute="leading" secondItem="Jwf-I6-1ax" secondAttribute="leading" constant="20" symbolic="YES" id="Zb6-pA-f9a"/>
+                        <constraint firstItem="NC6-8A-cgX" firstAttribute="centerY" secondItem="lne-kP-bLL" secondAttribute="centerY" id="aTE-20-Xrn"/>
+                        <constraint firstItem="QYU-Rr-NoO" firstAttribute="leading" secondItem="lne-kP-bLL" secondAttribute="trailing" constant="15" id="exe-kZ-wJp"/>
+                        <constraint firstAttribute="trailing" secondItem="QYU-Rr-NoO" secondAttribute="trailing" constant="20" symbolic="YES" id="fPW-tc-s5U"/>
+                        <constraint firstItem="cAL-zk-0nN" firstAttribute="centerY" secondItem="DHK-Ez-865" secondAttribute="centerY" id="fSk-op-g8T"/>
+                        <constraint firstItem="QYU-Rr-NoO" firstAttribute="firstBaseline" secondItem="NC6-8A-cgX" secondAttribute="firstBaseline" id="iLP-gU-LI8"/>
+                        <constraint firstItem="cAL-zk-0nN" firstAttribute="firstBaseline" secondItem="amc-Yw-w3B" secondAttribute="baseline" constant="43" id="qm1-lG-0Ye"/>
+                        <constraint firstItem="NC6-8A-cgX" firstAttribute="leading" secondItem="Jwf-I6-1ax" secondAttribute="leading" constant="20" symbolic="YES" id="rUl-kk-s71"/>
+                        <constraint firstItem="lne-kP-bLL" firstAttribute="leading" secondItem="NC6-8A-cgX" secondAttribute="trailing" constant="7" id="rqp-bZ-d3w"/>
+                        <constraint firstItem="NC6-8A-cgX" firstAttribute="firstBaseline" secondItem="cAL-zk-0nN" secondAttribute="baseline" constant="26" id="x0i-t9-SEy"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IH7-wL-ege">
+                    <rect key="frame" x="20" y="106" width="108" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Lighting &amp; Shading" id="dhJ-Tv-idx">
+                        <font key="font" metaFont="systemSemibold" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jwf-I6-1ax" secondAttribute="trailing" id="MwU-AB-UR2"/>
+                <constraint firstItem="D9e-d9-laq" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="6" id="VCU-6j-6u3"/>
+                <constraint firstItem="IH7-wL-ege" firstAttribute="leading" secondItem="D9e-d9-laq" secondAttribute="trailing" constant="3" id="VDl-Ju-Vkq"/>
+                <constraint firstItem="IH7-wL-ege" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="XK2-oU-Srs"/>
+                <constraint firstItem="Jwf-I6-1ax" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="fES-WM-1xK"/>
+                <constraint firstItem="D9e-d9-laq" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="6" id="kye-yI-oKb"/>
+                <constraint firstAttribute="bottom" secondItem="Jwf-I6-1ax" secondAttribute="bottom" id="xuL-id-cAw"/>
+                <constraint firstItem="Jwf-I6-1ax" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" symbolic="YES" id="zp1-m6-giW"/>
+            </constraints>
+            <connections>
+                <outlet property="ambientColorWell" destination="DHK-Ez-865" id="AM9-8T-Jy7"/>
+                <outlet property="constantColorCheckbox" destination="QYU-Rr-NoO" id="LtK-tz-ahH"/>
+                <outlet property="constantColorWell" destination="lne-kP-bLL" id="Lvf-EZ-PFs"/>
+                <outlet property="disclosureButton" destination="D9e-d9-laq" id="gu6-kN-f27"/>
+                <outlet property="lightingModePopUpButton" destination="W61-Nj-owZ" id="OuU-6A-niM"/>
+                <outlet property="twoSidedLightingCheckbox" destination="W61-Nj-owZ" id="wLc-TB-mTk"/>
+            </connections>
+            <point key="canvasLocation" x="-773" y="-336.5"/>
+        </customView>
+    </objects>
+</document>
