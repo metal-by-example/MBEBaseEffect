@@ -4,6 +4,7 @@ import Cocoa
 
 class InspectorView : NSView {
     @IBOutlet weak var disclosureButton: NSButton?
+    @IBOutlet weak var containerView: NSView?
 
     var heightConstraint: NSLayoutConstraint!
     var disclosedHeight: CGFloat { return 100 }
@@ -34,11 +35,13 @@ class InspectorView : NSView {
                 context.allowsImplicitAnimation = true
                 heightConstraint.constant = targetHeight
                 disclosureButton?.state = disclosed ? .on : .off
+                containerView?.isHidden = !disclosed
                 superview?.layoutSubtreeIfNeeded()
             }
         } else {
             heightConstraint.constant = targetHeight
             disclosureButton?.state = disclosed ? .on : .off
+            containerView?.isHidden = !disclosed
             superview?.layoutSubtreeIfNeeded()
         }
     }

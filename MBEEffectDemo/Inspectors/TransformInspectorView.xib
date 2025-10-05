@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24128" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24128"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
+        <customView clipsToBounds="YES" id="c22-O7-iKe">
             <rect key="frame" x="0.0" y="0.0" width="247" height="137"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
@@ -19,7 +20,7 @@
                         <font key="font" metaFont="smallSystem"/>
                     </buttonCell>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wTu-bT-McT">
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wTu-bT-McT">
                     <rect key="frame" x="20" y="118" width="61" height="14"/>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Transform" id="lr7-nb-fV1">
                         <font key="font" metaFont="systemSemibold" size="11"/>
@@ -30,7 +31,7 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="6DU-oC-Fvh">
                     <rect key="frame" x="0.0" y="0.0" width="247" height="117"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-EK-aEf">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-EK-aEf">
                             <rect key="frame" x="8" y="94" width="79" height="13"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="Ab4-ZM-nci"/>
@@ -41,7 +42,7 @@
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qmn-Yp-TwO">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qmn-Yp-TwO">
                             <rect key="frame" x="8" y="58" width="79" height="13"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="Gq0-Ac-uaM"/>
@@ -52,7 +53,7 @@
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-Zi-a78">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-Zi-a78">
                             <rect key="frame" x="8" y="22" width="79" height="13"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="KKv-eo-onW"/>
@@ -63,144 +64,144 @@
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MG5-6i-xgw">
-                            <rect key="frame" x="140" y="92" width="40" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MG5-6i-xgw">
+                            <rect key="frame" x="140" y="90" width="40" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0.0" drawsBackground="YES" id="QgR-2c-VZx">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hxi-v0-Frm">
-                            <rect key="frame" x="188" y="92" width="39" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hxi-v0-Frm">
+                            <rect key="frame" x="188" y="90" width="39" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0.0" drawsBackground="YES" id="2Jy-fd-5YA">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-co-fXN">
-                            <rect key="frame" x="93" y="92" width="39" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-co-fXN">
+                            <rect key="frame" x="93" y="90" width="39" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0.0" drawsBackground="YES" id="ll9-Ag-Vrt">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gwt-mn-RgR">
-                            <rect key="frame" x="91" y="78" width="43" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gwt-mn-RgR">
+                            <rect key="frame" x="91" y="76" width="43" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="x" id="AIu-eA-RmL">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vge-yu-agw">
-                            <rect key="frame" x="138" y="78" width="44" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vge-yu-agw">
+                            <rect key="frame" x="138" y="76" width="44" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="y" id="hju-xS-9mc">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kMU-y1-FQx">
-                            <rect key="frame" x="186" y="79" width="43" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kMU-y1-FQx">
+                            <rect key="frame" x="186" y="77" width="43" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="z" id="sDc-JC-oOx">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sFm-9y-n7n">
-                            <rect key="frame" x="140" y="56" width="40" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sFm-9y-n7n">
+                            <rect key="frame" x="140" y="54" width="40" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0.0" drawsBackground="YES" id="2pj-CE-HpD">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4sD-Xi-iYo">
-                            <rect key="frame" x="188" y="56" width="39" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4sD-Xi-iYo">
+                            <rect key="frame" x="188" y="54" width="39" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0.0" drawsBackground="YES" id="tbS-9V-IbI">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ag0-ux-CH8">
-                            <rect key="frame" x="93" y="56" width="39" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ag0-ux-CH8">
+                            <rect key="frame" x="93" y="54" width="39" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0.0" drawsBackground="YES" id="3BC-oN-ikA">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-uo-Mub">
-                            <rect key="frame" x="91" y="42" width="43" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-uo-Mub">
+                            <rect key="frame" x="91" y="40" width="43" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="x" id="Rcl-Jw-5Ze">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-j1-Lv4">
-                            <rect key="frame" x="138" y="42" width="44" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-j1-Lv4">
+                            <rect key="frame" x="138" y="40" width="44" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="y" id="bOT-LC-qtB">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-st-PGE">
-                            <rect key="frame" x="186" y="43" width="43" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-st-PGE">
+                            <rect key="frame" x="186" y="41" width="43" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="z" id="qxc-bc-UPx">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KPb-oV-dsb">
-                            <rect key="frame" x="140" y="20" width="40" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KPb-oV-dsb">
+                            <rect key="frame" x="140" y="18" width="40" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="1.0" drawsBackground="YES" id="w5j-g2-wiG">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JSN-Il-sUq">
-                            <rect key="frame" x="188" y="20" width="39" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JSN-Il-sUq">
+                            <rect key="frame" x="188" y="18" width="39" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="1.0" drawsBackground="YES" id="ZEO-BQ-QYL">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B1A-84-x0y">
-                            <rect key="frame" x="93" y="20" width="39" height="19"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B1A-84-x0y">
+                            <rect key="frame" x="93" y="18" width="39" height="22"/>
                             <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="1.0" drawsBackground="YES" id="cov-ST-dqp">
                                 <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Y1-IC-0WU">
-                            <rect key="frame" x="91" y="6" width="43" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Y1-IC-0WU">
+                            <rect key="frame" x="91" y="4" width="43" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="x" id="pTK-1L-J4a">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-1E-Mfw">
-                            <rect key="frame" x="138" y="6" width="44" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-1E-Mfw">
+                            <rect key="frame" x="138" y="4" width="44" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="y" id="ozA-8y-Abu">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNn-ig-7TQ">
-                            <rect key="frame" x="186" y="7" width="43" height="13"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNn-ig-7TQ">
+                            <rect key="frame" x="186" y="5" width="43" height="13"/>
                             <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="center" title="z" id="wdA-Uo-Wu1">
                                 <font key="font" metaFont="system" size="10"/>
                                 <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
